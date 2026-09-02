@@ -1,26 +1,172 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  /* scroll-behavior: smooth; */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-heading: var(--font-heading);
+  --font-sans: var(--font-sans);
+  --font-numbers: var(--font-numbers);
+  --color-background: #f7f5f1;
+  --color-background-alt: #efebe5;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-concrete: #e3ded7;
+
+  --color-dark: #202224;
+  --color-dark-deep: #191b1c;
+
+  --color-text: #232323;
+  --color-muted: #66635f;
+  --color-light: #f5f3ef;
+
+  --color-primary: #c96332;
+  --color-primary-hover: #ae4f27;
+  --color-primary-light: #d98a62;
+
+  --color-border: #d6d1ca;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans), var(--font-heading), var(--font-numbers);
+}
+
+.numbersF {
+  font-family: vvar(--font-numbers);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+.btn1 {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: var(--color-primary);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-background);
+}
+.btn1:hover {
+  background-color: var(--color-primary-light);
+}
+
+.btn1-notChoosed {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 80%;
+}
+
+.btn1-notChoosed:hover {
+  opacity: 60%;
+}
+
+.btn2 {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 0.1rem solid var(--color-text);
+  padding: 0.65rem 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.btn2-white {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 0.1rem solid var(--color-background);
+  padding: 0.65rem 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.btn2:hover,
+.btn2-white:hover {
+  opacity: 80%;
+}
+
+.hero-btn1 {
+  padding: 1.5rem 3rem;
+}
+.hero-btn2 {
+  padding: 1.4rem 2.9rem;
+}
+
+.reviewsBorder:first-child {
+  border: none;
+}
+.reviewsBorder {
+  border-left: 1px solid var(--color-border);
+}
+
+.schedule {
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--color-border);
+}
+
+.schedule-header,
+.schedule-row {
+  display: grid;
+  grid-template-columns: 180px repeat(11, 1fr);
+}
+
+.schedule-header > *,
+.schedule-row > * {
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 12px;
+}
+
+.timeline {
+  grid-column: 2 / -1;
+  position: relative;
+  min-height: 44px;
+}
+
+.bar {
+  position: absolute;
+  top: 50%;
+  height: 10px;
+  transform: translateY(-50%);
+  background: var(--color-primary);
+}
+
+.bar-1 {
+  left: 3%;
+  width: 15%;
+}
+
+.bar-2 {
+  left: 15%;
+  width: 22%;
+}
+.bar-3 {
+  left: 35%;
+  width: 22%;
+}
+.bar-4 {
+  left: 56%;
+  width: 16%;
+}
+
+.bar-5 {
+  left: 70%;
+  width: 20%;
+}
+.bar-6 {
+  left: 85%;
+  width: 14%;
 }
