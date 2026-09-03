@@ -14,11 +14,11 @@ function CarouselReviewsComp() {
     <>
       <div className="overflow-x-hidden max-sm:overflow-x-scroll scrollbar-none relative">
         <div
-          className="grid grid-cols-9 gap-4  w-[300%] max-xl:w-[450%] max-sm:w-[800%] px-2 transition-all duration-300 py-4"
+          className="grid grid-cols-4 gap-4  w-[133.3%] max-xl:w-[200%] max-sm:w-[300%] px-2 transition-all duration-300 py-4"
           style={{ transform: `translateX(-${isMoved}%)` }}
         >
           {data.map((rev) => (
-            <div key={rev.id} className="h-full reviewsBorder ml-4">
+            <div key={rev.id} className="h-full reviewsBorder ml-4 ">
               <div className="p-6 rounded-xl h-full flex flex-col justify-between">
                 <div>
                   <h3 className="text-5xl text-primary">”</h3>
@@ -50,7 +50,7 @@ function CarouselReviewsComp() {
           </button>
           <button
             className={`text-xl p-2 cursor-pointer transition-all duration-300 ${isMoved === 0 && "hover:bg-primary"} `}
-            onClick={() => setIsMoved(11.1)}
+            onClick={() => setIsMoved(25)}
           >
             {">"}
           </button>

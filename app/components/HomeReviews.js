@@ -24,7 +24,7 @@ function HomeReviews() {
               Zobacz więcej opinii<span className="pl-3">→</span>
             </Link>
           </div>
-          <div className="bg-background w-full">
+          <div className="bg-background sm:w-full">
             <Fade delay={250} triggerOnce>
               <CarouselReviewsComp />
             </Fade>
