@@ -23,7 +23,7 @@ function MobileNav() {
           <Fade duration={300} triggerOnce direction="down">
             <ul className="flex flex-col justify-center items-center h-full gap-8 px-4 font-semibold text-lg">
               <li className="navLink">
-                <Link href="#" onClick={() => setIsOpen(!isOpen)}>
+                <Link href="/" onClick={() => setIsOpen(!isOpen)}>
                   Strona Główna
                 </Link>
               </li>
