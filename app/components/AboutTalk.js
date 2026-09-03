@@ -5,10 +5,10 @@ import { Fade } from "react-awesome-reveal";
 
 function AboutTalk() {
   return (
-    <section className="grid grid-cols-2 gap-6 overflow-hidden">
-      <div className="pl-16 py-10">
+    <section className="grid grid-cols-2 gap-6 overflow-hidden max-lg:grid-cols-1">
+      <div className="pl-16 py-10 max-lg:px-8">
         <Fade triggerOnce>
-          <h2 className="text-5xl tracking-tight font-semibold">
+          <h2 className="text-5xl tracking-tight font-semibold max-sm:text-3xl">
             Porozmawiajmy o Twoim domu.
           </h2>
           <p className="py-8">
@@ -25,7 +25,7 @@ function AboutTalk() {
           </Link>
         </Fade>
       </div>
-      <div className="relative">
+      <div className="relative min-h-80">
         <Fade duration={1500} triggerOnce>
           <Image
             src={IMGabout3}

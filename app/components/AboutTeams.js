@@ -6,13 +6,13 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 function AboutTeams() {
   return (
     <section className="pt-2 bg-background-alt/60">
-      <div className="grid grid-cols-2">
-        <div className="pl-16 pb-8">
+      <div className="grid grid-cols-2 gap-6 max-lg:grid-cols-1">
+        <div className="pl-16 pb-8 max-lg:px-8">
           <Fade triggerOnce>
-            <p className="uppercase tracking-wider text-lg text-primary font-bold">
+            <p className="uppercase tracking-wider text-lg text-primary font-bold max-sm:text-sm">
               Własne zespoły, zaufani ludzie
             </p>
-            <h2 className="text-5xl tracking-tight font-semibold">
+            <h2 className="text-5xl tracking-tight font-semibold max-sm:text-3xl">
               Doświadczenie ludzi, którym mozesz zaufać.
             </h2>
             <p className="pt-8 pb-6">
@@ -43,7 +43,7 @@ function AboutTeams() {
             </Fade>
           </ul>
         </div>
-        <div className="relative">
+        <div className="relative min-h-80">
           <Fade duration={1500} triggerOnce>
             <Image
               src={IMGAbout2}
