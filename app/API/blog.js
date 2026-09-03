@@ -58,7 +58,7 @@ export const blogData = [
       "Koszt budowy domu 150 m² zależy od technologii, standardu wykończenia i lokalizacji. Sprawdź aktualne widełki cenowe.",
     image: img5,
     date: "2026-06-20",
-    link: "/poradnik/ile-kosztuje-budowa-domy-150m",
+    link: "/poradnik/ile-kosztuje-budowa-domu-150m",
     category: "koszty",
     pinned: true,
   },

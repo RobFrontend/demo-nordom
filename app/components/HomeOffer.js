@@ -10,20 +10,20 @@ import { LuArmchair, LuBrickWall } from "react-icons/lu";
 
 function HomeOffer() {
   return (
-    <section className="pt-12 pb-8 px-16 bg-background-alt/60">
-      <div className="flex gap-10">
+    <section className="pt-12 pb-8 px-16 bg-background-alt/60  overflow-x-hidden max-2xl:px-8">
+      <div className="flex gap-8 max-2xl:flex-col">
         <div className="w-full">
           <Fade triggerOnce>
-            <p className="uppercase tracking-wider text-lg text-primary font-bold">
+            <p className="uppercase tracking-wider text-lg text-primary font-bold max-sm:text-sm">
               Oferta
             </p>
-            <h2 className="text-5xl tracking-tight font-semibold w-max">
+            <h2 className="text-5xl tracking-tight font-semibold sm:w-max max-sm:text-3xl">
               Kompleksowa realizacja <br></br> Twojego domu
             </h2>
           </Fade>
         </div>
         <Fade delay={200} triggerOnce>
-          <div className="flex gap-8">
+          <div className="flex gap-6 max-lg:grid max-lg:grid-cols-2 max-sm:grid-cols-1">
             <div className="flex flex-col justify-between bg-background pb-6">
               <div>
                 <div className="relative">

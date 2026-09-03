@@ -5,16 +5,16 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-dark px-16 pt-10 pb-5 text-background text-sm">
-      <div className="flex gap-2 justify-between mb-6">
-        <div className="max-w-[20%]">
+    <footer className="bg-dark px-16 pt-10 pb-5 text-background text-sm max-2xl:px-8">
+      <div className="flex gap-2 justify-between mb-6 max-lg:grid max-lg:grid-cols-3 max-lg:gap-8 max-md:grid-cols-2 max-[30rem]:grid-cols-1">
+        <div className="lg:max-w-[20%] max-lg:max-w-[80%]">
           <Image src={Logo} alt="logo" />
           <p className="pt-6">
             Budujemy nowoczesne domy jednorodzinne w Warszawie i na terenie
             Mazowsza.
           </p>
         </div>{" "}
-        <div>
+        <div className="max-lg:hidden">
           <p className="border-r h-full border-(--color-muted) opacity-50"></p>
         </div>
         <ul className="flex flex-col gap-2">
@@ -34,7 +34,7 @@ function Footer() {
             <Link href="/oferta">Rozbudowa i przebudowa</Link>
           </li>
         </ul>
-        <div>
+        <div className="max-lg:hidden">
           <p className="border-r h-full border-(--color-muted) opacity-50"></p>
         </div>
         <ul className="flex flex-col gap-2">
@@ -60,7 +60,7 @@ function Footer() {
             <Link href="/kontakt">Kontakt</Link>
           </li>
         </ul>
-        <div>
+        <div className="max-lg:hidden">
           <p className="border-r h-full border-(--color-muted) opacity-50"></p>
         </div>
         <ul className="flex flex-col gap-2">
@@ -77,7 +77,7 @@ function Footer() {
             ul. Konstruktorów 7<br></br>02-673 Warszawa
           </li>
         </ul>
-        <div>
+        <div className="max-lg:hidden">
           <p className="border-r h-full border-(--color-muted) opacity-50"></p>
         </div>
         <ul className="flex flex-col gap-2">
@@ -98,15 +98,15 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className="flex justify-between border-t border-muted/50 mx-auto pt-4 text-xs ">
-        <div className="flex gap-4">
+      <div className="flex justify-between border-t border-muted/50 mx-auto pt-4 text-xs max-md:flex-col max-md:gap-2 max-md:items-center">
+        <div className="flex gap-4 max-sm:gap-2 max-[25rem]:flex-col max-[25rem]:gap-1 max-[25rem]:text-center">
           <p className="opacity-80">
             &copy; {new Date().getFullYear()} Nordom Sp. z o.o.
           </p>
-          <p className="opacity-80">|</p>
+          <p className="opacity-80 max-[30rem]:hidden">|</p>
           <p className="opacity-80">Wszelkie prawa zastrzeżone</p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-sm:gap-2">
           <Link
             href="/"
             className="opacity-80 transition-opacity duration-300 hover:opacity-60"

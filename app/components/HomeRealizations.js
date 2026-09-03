@@ -8,28 +8,34 @@ import { Fade } from "react-awesome-reveal";
 
 function HomeRealizations() {
   return (
-    <section className="px-16 bg-background-alt/60">
+    <section className="px-16 bg-background-alt/60 max-2xl:px-8">
       <div className=" py-8  border-t border-border">
         <Fade triggerOnce>
-          <div className="flex justify-between  mb-6">
+          <div className="flex justify-between  mb-6 max-md:flex-col max-md:gap-6">
             <div>
-              <p className="uppercase tracking-wider text-lg text-primary font-bold">
+              <p className="uppercase tracking-wider text-lg text-primary font-bold max-sm:text-sm">
                 Realizacje
               </p>
-              <h2 className="text-5xl tracking-tight font-semibold">
+              <h2 className="text-5xl tracking-tight font-semibold max-sm:text-3xl">
                 Wybrane realizacje
               </h2>
             </div>
             <Link
               href="/realizacje"
-              className="btn2 inline-flex items-center self-end text-sm"
+              className="btn2 inline-flex items-center w-fit md:self-end text-sm max-[25rem]:hidden"
             >
               Zobacz wszystkie realizacje<span className="pl-3">→</span>
             </Link>
+            <Link
+              href="/realizacje"
+              className="btn2 inline-flex items-center w-fit md:self-end text-sm min-[25rem]:hidden"
+            >
+              Wszystkie realizacje<span className="pl-3">→</span>
+            </Link>
           </div>
 
-          <div className="flex gap-8">
-            <div className="flex flex-col justify-between bg-background pb-4">
+          <div className="flex gap-6 max-xl:grid max-xl:grid-cols-2 max-sm:grid-cols-1">
+            <div className="flex flex-col justify-between bg-background pb-4 ">
               <Link
                 href="/realizacje"
                 className="transition-opacity duration-300 hover:opacity-80"

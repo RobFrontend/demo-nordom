@@ -4,16 +4,17 @@ import { Fade } from "react-awesome-reveal";
 
 function HomeReviews() {
   return (
-    <section className="px-16 py-10 bg-dark">
+    <section className="px-16 py-10 bg-dark max-2xl:px-8">
       <Fade triggerOnce>
-        <div className="flex gap-8">
+        <div className="flex gap-8 max-xl:gap-6 max-lg:flex-col max-lg:gap-10">
           <div className="flex flex-col justify-between text-background">
             <div>
-              <p className="uppercase tracking-wider text-lg  font-bold text-primary">
+              <p className="uppercase tracking-wider text-lg  font-bold text-primary max-sm:text-sm">
                 Opinie
               </p>
-              <h2 className="text-5xl font-semibold tracking-tight mb-8">
-                Zaufanie buduje najlepsze domy
+              <h2 className="text-5xl font-semibold tracking-tight mb-8 max-sm:text-3xl">
+                Zaufanie buduje<br className="min-[30rem]:hidden"></br>{" "}
+                najlepsze domy
               </h2>
             </div>
             <Link

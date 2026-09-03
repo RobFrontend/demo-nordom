@@ -55,15 +55,15 @@ function CarouselReviewsComp() {
             {">"}
           </button>
         </div>
-        <div className="absolute top-0 right-0 bg-primary text-background xl:hidden max-sm:hidden">
+        <div className="absolute top-0 right-0 bg-border text-background xl:hidden max-sm:hidden">
           <button
-            className={`text-xl p-2 cursor-pointer transition-all duration-300 ${isMoved > 0 && "hover:bg-dark-deep"}`}
+            className={`text-xl p-2 cursor-pointer transition-all duration-300 ${isMoved > 0 && "hover:bg-primary"}`}
             onClick={() => setIsMoved(0)}
           >
             {"<"}
           </button>
           <button
-            className={`text-xl p-2 cursor-pointer transition-all duration-300 ${isMoved === 0 && "hover:bg-dark-deep"} `}
+            className={`text-xl p-2 cursor-pointer transition-all duration-300 ${isMoved === 0 && "hover:bg-primary"} `}
             onClick={() => setIsMoved(22.1)}
           >
             {">"}

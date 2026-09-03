@@ -8,16 +8,16 @@ import { RiPriceTag2Line } from "react-icons/ri";
 
 function HomeProces() {
   return (
-    <section className="px-16 py-10">
+    <section className="px-16 py-10  overflow-x-hidden max-2xl:px-8">
       <Fade triggerOnce>
-        <p className="uppercase tracking-wider text-lg  font-bold text-primary">
+        <p className="uppercase tracking-wider text-lg  font-bold text-primary max-sm:text-sm">
           Proces
         </p>
-        <h2 className="text-5xl font-semibold tracking-tight mb-8 w-max">
+        <h2 className="text-5xl font-semibold tracking-tight mb-8 w-max max-sm:text-3xl">
           Jak pracujemy
         </h2>
       </Fade>
-      <div className="flex gap-8 text-sm pt-2 justify-between">
+      <div className="flex gap-8 text-sm pt-2 justify-between max-2xl:grid max-2xl:grid-cols-3 max-xl:gap-10 max-sm:grid-cols-2">
         <Fade delay={200} triggerOnce>
           <div className="max-w-50">
             <BsChatLeftDots className="w-12 h-12 text-dark justify-self-center" />
@@ -28,7 +28,7 @@ function HomeProces() {
             <p>Poznajemy Twoje potrzeby, działkę i oczekiwania.</p>
           </div>
         </Fade>
-        <Fade delay={250} className="self-center" triggerOnce>
+        <Fade delay={250} className="self-center max-2xl:hidden" triggerOnce>
           <LiaLongArrowAltRightSolid className="self-center w-8 h-8" />
         </Fade>
         <Fade delay={300} triggerOnce>
@@ -41,7 +41,7 @@ function HomeProces() {
             <p>Przygotowujemy transparentną wycenę i harmonogram.</p>
           </div>
         </Fade>
-        <Fade delay={350} className="self-center" triggerOnce>
+        <Fade delay={350} className="self-center max-2xl:hidden" triggerOnce>
           <LiaLongArrowAltRightSolid className="self-center w-8 h-8" />
         </Fade>
         <Fade delay={400} triggerOnce>
@@ -54,7 +54,7 @@ function HomeProces() {
             <p>Doprecyzowujemy projekt i wybieramy najlepsze rozwiązania.</p>
           </div>
         </Fade>
-        <Fade delay={450} className="self-center" triggerOnce>
+        <Fade delay={450} className="self-center max-2xl:hidden" triggerOnce>
           <LiaLongArrowAltRightSolid className="self-center w-8 h-8" />
         </Fade>
         <Fade delay={500} triggerOnce>
@@ -67,7 +67,7 @@ function HomeProces() {
             <p>Budujemy z dbałością o każdy detal i zgodnie z ustaleniami.</p>
           </div>
         </Fade>
-        <Fade delay={550} className="self-center" triggerOnce>
+        <Fade delay={550} className="self-center max-2xl:hidden" triggerOnce>
           <LiaLongArrowAltRightSolid className="self-center w-8 h-8" />
         </Fade>
         <Fade delay={600} triggerOnce>

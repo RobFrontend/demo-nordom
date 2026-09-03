@@ -5,14 +5,14 @@ import { Fade } from "react-awesome-reveal";
 
 function HomeMap() {
   return (
-    <section className="grid grid-cols-[30fr_70fr] max-[1650px]:grid-cols-[40fr_60fr]  max-[1460px]:grid-cols-1">
-      <div className="px-16 h-full py-10 flex flex-col justify-between">
+    <section className="grid grid-cols-[30fr_70fr] max-[1650px]:grid-cols-[40fr_60fr]  max-[1460px]:grid-cols-1 ">
+      <div className="px-16 h-full py-10 flex flex-col justify-between max-2xl:px-8">
         <div>
           <Fade triggerOnce>
-            <p className="uppercase tracking-wider text-lg  font-bold text-primary">
+            <p className="uppercase tracking-wider text-lg  font-bold text-primary max-sm:text-sm">
               Działamy na terenie
             </p>
-            <h2 className="text-5xl font-semibold tracking-tight mb-6">
+            <h2 className="text-5xl font-semibold tracking-tight mb-6 max-sm:text-3xl">
               Warszawa i Mazowsze
             </h2>
             <p>
@@ -25,7 +25,7 @@ function HomeMap() {
         <Fade delay={250} direction="left" triggerOnce>
           <Link
             href="/"
-            className="inline-flex items-center mt-5 mx-4 text-primary uppercase tracking-wider text-sm font-semibold transition-all duration-300"
+            className="inline-flex items-center mt-5 text-primary uppercase tracking-wider text-sm font-semibold transition-all duration-300"
           >
             Dowiedz się więcej<span className="pl-3">→</span>
           </Link>
