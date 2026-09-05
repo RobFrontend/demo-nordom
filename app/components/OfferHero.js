@@ -28,7 +28,7 @@ function OfferHero() {
                 po klucz.
               </h1>
               <p className="border-b-2 w-12 border-(--color-primary) mt-4 max-md:mx-0 max-sm:mt-2 max-sm:mx-auto"></p>
-              <p className="text-lg mt-8">
+              <p className="text-lg mt-8 max-sm:hidden">
                 Prowadzimy Cię przez każdy etap budowy - rzetelnie, <br></br>
                 terminowo i z dbałością o każdy detal. Wybierz zakres <br></br>
                 usługi dopasowany do Twoich potrzeb i ciesz się <br></br>
@@ -53,13 +53,13 @@ function OfferHero() {
             />
           </Fade>
         </div>
-      </div>{" "}
+      </div>
       <Image
         src={HeroBG}
         alt="hero"
         fill
         loading="lazy"
-        className="object-bottom object-cover -z-10 2xl:hidden"
+        className="object-center object-cover -z-10 2xl:hidden"
       />
     </section>
   );

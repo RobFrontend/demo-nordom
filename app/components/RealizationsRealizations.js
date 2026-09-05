@@ -18,7 +18,7 @@ function RealizationsRealizations() {
       : data.filter((d) => d.category === isActiveFilter);
 
   return (
-    <section className="px-16 py-10">
+    <section className="px-16 py-10 max-2xl:px-8">
       <Fade triggerOnce delay={250} duration={1500}>
         <div className="pb-3 flex justify-between items-center border-b border-border/50 w-full">
           <div className="flex gap-4 h-full ">
@@ -45,7 +45,7 @@ function RealizationsRealizations() {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-8 pt-5">
+        <div className="grid grid-cols-3 gap-8 pt-5 max-2xl:gap-6 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {filteredData.map((d) => (
             <Link
               key={d.id}
