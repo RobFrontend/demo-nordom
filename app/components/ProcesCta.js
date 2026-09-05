@@ -5,10 +5,10 @@ import { Fade } from "react-awesome-reveal";
 function ProcesCta() {
   return (
     <section className="bg-dark text-background border-b border-muted/50">
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-8 max-lg:grid-cols-1">
         <Fade triggerOnce>
-          <div className="pl-16 py-12 flex flex-col gap-4 justify-self-center">
-            <h2 className="text-5xl tracking-tight font-semibold">
+          <div className="pl-16 py-12 flex flex-col gap-4 justify-self-center max-lg:px-8 max-lg:justify-self-start max-sm:px-4">
+            <h2 className="text-5xl tracking-tight font-semibold max-sm:text-3xl">
               Gotowy, aby zacząć?
             </h2>
             <p>Umów bezpłatną rozmowę i porozmawiajmy o Twoim domu.</p>
@@ -22,7 +22,7 @@ function ProcesCta() {
             </Fade>
           </div>
         </Fade>
-        <div className="relative">
+        <div className="relative min-h-80">
           <Fade duration={2000} triggerOnce>
             <Image
               src={IMGCta}

@@ -3,17 +3,18 @@ import { Fade } from "react-awesome-reveal";
 
 function ProcesHarm() {
   return (
-    <section className="px-16 py-12 overflow-hidden">
+    <section className="px-16 py-12 overflow-hidden max-2xl:px-8 max-sm:px-4">
       <Fade triggerOnce>
-        <div className="flex gap-8 justify-center">
+        <div className="flex gap-8 justify-center max-[1150px]:flex-col">
           <div className="flex flex-col justify-between">
             <div>
-              <p className="uppercase tracking-wider text-lg  font-bold text-primary ">
+              <p className="uppercase tracking-wider text-lg  font-bold text-primary max-sm:text-sm">
                 Harmonogram
               </p>
-              <h2 className="text-5xl font-semibold tracking-tight mb-6">
-                Jesteś na bieżąco, <br></br>na każdym etapie
+              <h2 className="text-5xl font-semibold tracking-tight mb-6 max-sm:text-3xl">
+                Plan działania <br></br>i przewidywany czas
               </h2>
+
               <p>
                 Każdy projekt realizujemy według ustalonego harmonogramu.{" "}
                 <br></br>
@@ -28,7 +29,7 @@ function ProcesHarm() {
               <span className="pl-3">→</span>
             </Link>
           </div>
-          <div className="schedule w-full">
+          <div className="schedule w-full max-md:overflow-scroll max-md:scrollbar-none">
             <div className="schedule-header">
               <span className="font-semibold text-sm opacity-80 text-primary">
                 ETAP / TYGODNIE

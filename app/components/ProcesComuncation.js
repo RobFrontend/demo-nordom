@@ -8,14 +8,14 @@ import { BsChatLeftDots } from "react-icons/bs";
 
 function ProcesComuncation() {
   return (
-    <section className="px-16 pt-10 pb-14 border-y border-border/75 bg-background-alt overflow-hidden">
-      <div className="grid grid-cols-2 gap-8 relative">
+    <section className="px-16 pt-10 pb-14 border-y border-border/75 bg-background-alt overflow-hidden max-2xl:px-8 max-sm:px-4">
+      <div className="grid grid-cols-2 gap-8 relative max-lg:grid-cols-1">
         <div>
           <Fade triggerOnce>
-            <p className="uppercase tracking-wider text-lg  font-bold text-primary ">
+            <p className="uppercase tracking-wider text-lg  font-bold text-primary max-sm:text-sm">
               Komunikacja i kontrola
             </p>
-            <h2 className="text-5xl font-semibold tracking-tight mb-6">
+            <h2 className="text-5xl font-semibold tracking-tight mb-6 max-sm:text-3xl">
               Jesteś na bieżąco, <br></br>na każdym etapie
             </h2>
             <p>
@@ -58,16 +58,21 @@ function ProcesComuncation() {
           </Fade>
         </div>
 
-        <div>
+        <div className="relative min-h-80">
           <Fade duration={1000} triggerOnce>
-            <Image src={IMGproc1} alt="Proces1" className="w-full h-auto" />
+            <Image
+              src={IMGproc1}
+              fill
+              alt="Proces1"
+              className="w-full h-auto object-center object-cover"
+            />
           </Fade>
         </div>
         <Fade duration={1000} triggerOnce>
           <Image
             src={IMGproc2}
             alt="Proces2"
-            className="absolute left-1/2 -bottom-12 -translate-x-1/2 max-h-[90%] w-auto"
+            className="absolute left-1/2 -bottom-12 -translate-x-1/2 max-h-[90%] w-auto max-xl:left-[55%] max-lg:left-[83%] max-lg:top-0 max-lg:max-h-[60%] max-md:max-h-[45%] max-md:left-[85%] max-sm:top-[60%] max-sm:max-h-[35%]"
           />
         </Fade>
       </div>
