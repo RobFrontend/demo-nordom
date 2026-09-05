@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 function AboutTalk() {
   return (
     <section className="grid grid-cols-2 gap-6 overflow-hidden max-lg:grid-cols-1">
-      <div className="pl-16 py-10 max-lg:px-8">
+      <div className="pl-16 py-10 max-lg:px-8 max-sm:px-4">
         <Fade triggerOnce>
           <h2 className="text-5xl tracking-tight font-semibold max-sm:text-3xl">
             Porozmawiajmy o Twoim domu.

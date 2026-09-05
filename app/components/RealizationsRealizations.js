@@ -18,16 +18,16 @@ function RealizationsRealizations() {
       : data.filter((d) => d.category === isActiveFilter);
 
   return (
-    <section className="px-16 py-10 max-2xl:px-8">
+    <section className="px-16 py-10 max-2xl:px-8 max-sm:px-4">
       <Fade triggerOnce delay={250} duration={1500}>
-        <div className="pb-3 flex justify-between items-center border-b border-border/50 w-full">
-          <div className="flex gap-4 h-full ">
+        <div className="pb-3  border-b border-border/50 w-full">
+          <div className="flex gap-4 h-full max-lg:gap-2 max-lg:text-xs max-md:gap-0 max-sm:grid max-sm:grid-cols-2 max-sm:gap-2">
             <button
               className={`${isActiveFilter === "all" ? "btn1" : "btn1-notChoosed"} uppercase cursor-pointer h-full`}
               onClick={() => setIsActiveFilter("all")}
             >
               Wszystkie{" "}
-              <span className="text-sm opacity-60 pl-3">
+              <span className="text-sm opacity-60 pl-3 max-lg:pl-1">
                 ({data.filter((d) => d.category).length})
               </span>
             </button>
@@ -38,7 +38,7 @@ function RealizationsRealizations() {
                 onClick={() => setIsActiveFilter(cat)}
               >
                 {cat.split("-").join(" ").toUpperCase()}{" "}
-                <span className="text-sm opacity-60 pl-3">
+                <span className="text-sm opacity-60 pl-3 max-lg:pl-1">
                   ({data.filter((d) => d.category === cat).length})
                 </span>
               </button>
