@@ -9,10 +9,10 @@ import { BsHouse, BsHouseGear } from "react-icons/bs";
 import { LuArmchair, LuBrickWall } from "react-icons/lu";
 function OfferOffer() {
   return (
-    <section className="pt-12 pb-8 px-16">
+    <section className="pt-12 pb-8 px-16 max-2xl:px-8">
       <div className="flex gap-10">
         <Fade delay={200} triggerOnce>
-          <div className="flex gap-8">
+          <div className="flex gap-8 max-lg:grid max-lg:grid-cols-2 max-sm:grid-cols-1">
             <div className="flex flex-col justify-between shadow-md pb-6">
               <div>
                 <div className="relative">

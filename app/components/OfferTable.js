@@ -8,10 +8,10 @@ import { TfiPaintRoller } from "react-icons/tfi";
 
 function OfferTable() {
   return (
-    <section className="pt-10 pb-12 px-16">
+    <section className="pt-10 pb-12 px-16 max-lg:px-8 max-sm:px-4">
       <Fade triggerOnce>
         <div className="pt-4 overflow-x-auto px-1 pb-2 max-md:scrollbar-none bg-background-alt/60">
-          <table className="w-full border-collapse">
+          <table className="w-full border-collapse max-sm:text-sm">
             <thead>
               <tr>
                 <th scope="col" className="px-4 py-2 text-left">
@@ -20,25 +20,25 @@ function OfferTable() {
                 <th scope="col" className="px-4 py-2">
                   <div className="flex items-center gap-3 p-2 justify-center">
                     <BsHouse className="w-8 h-8 opacity-75" />
-                    <p>Stan surowy</p>
+                    <p className="w-max">Stan surowy</p>
                   </div>
                 </th>
                 <th scope="col" className="px-4 py-2">
                   <div className="flex items-center gap-3 p-2 justify-center">
                     <LuBrickWall className="w-8 h-8 opacity-75" />
-                    <p>Stan deweloperski</p>
+                    <p className="w-max">Stan deweloperski</p>
                   </div>
                 </th>
                 <th scope="col" className="px-4 py-2">
                   <div className="flex items-center gap-3 p-2 justify-center">
                     <LuArmchair className="w-8 h-8 opacity-75" />
-                    <p>Dom pod klucz</p>
+                    <p className="w-max">Dom pod klucz</p>
                   </div>
                 </th>
                 <th scope="col" className="px-4 py-2">
                   <div className="flex items-center gap-3 p-2 justify-center">
                     <BsHouseGear className="w-8 h-8 opacity-75" />
-                    <p>Rozbudowa i przebudowa</p>
+                    <p className="w-max">Rozbudowa i przebudowa</p>
                   </div>
                 </th>
               </tr>

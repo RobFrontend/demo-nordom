@@ -5,12 +5,12 @@ import { Fade } from "react-awesome-reveal";
 import { SlNotebook } from "react-icons/sl";
 function OfferFeatures() {
   return (
-    <section className="px-16 py-12 relative overflow-hidden">
+    <section className="px-16 py-12 relative overflow-hidden max-2xl:px-8">
       <Fade triggerOnce duration={1500}>
-        <div className="flex gap-16 justify-center">
-          <div className="flex flex-col gap-5 items-center text-center">
+        <div className="flex gap-16 justify-center max-md:flex-col max-md:gap-10">
+          <div className="flex flex-col gap-5 items-center text-center max-sm:gap-3">
             <div className="py-2">
-              <GoShieldCheck className="w-16 h-16" />
+              <GoShieldCheck className="w-16 h-16 max-sm:w-12 max-sm:h-12" />
             </div>
             <div>
               <p className="uppercase font-semibold mb-2 tracking-wide">
@@ -22,9 +22,9 @@ function OfferFeatures() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-5 items-center text-center">
+          <div className="flex flex-col gap-5 items-center text-center max-sm:gap-3">
             <div className="py-2">
-              <SlNotebook className="w-16 h-16" />
+              <SlNotebook className="w-16 h-16 max-sm:w-12 max-sm:h-12" />
             </div>
             <div>
               <p className="uppercase font-semibold mb-2 tracking-wide">
@@ -36,9 +36,9 @@ function OfferFeatures() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-5 items-center text-center">
+          <div className="flex flex-col gap-5 items-center text-center max-sm:gap-3">
             <div className="py-2">
-              <GoPeople className="w-16 h-16" />
+              <GoPeople className="w-16 h-16 max-sm:w-12 max-sm:h-12" />
             </div>
             <div>
               <p className="uppercase font-semibold mb-2 tracking-wide">
