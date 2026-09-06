@@ -9,8 +9,8 @@ import Image from "next/image";
 function ContactData() {
   return (
     <div>
-      <div className="px-10 py-12 bg-background-alt max-2xl:min-w-full min-w-150">
-        <h2 className="text-4xl font-semibold tracking-tight w-max mb-4">
+      <div className="px-10 py-12 bg-background-alt max-2xl:min-w-full min-w-150 max-lg:px-4 max-lg:w-full">
+        <h2 className="text-4xl font-semibold tracking-tight w-max mb-4 max-sm:text-3xl">
           Dane kontaktowe
         </h2>
         <p className="text-sm mb-2">
@@ -68,17 +68,20 @@ function ContactData() {
           </li>
         </ul>
       </div>
-      <div className=" text-background mt-4 px-10 py-12 relative overflow-hidden">
-        <h2 className="text-3xl font-semibold tracking-tight w-max mb-4">
-          Działąmy na terenie<br></br>Warszawy i Mazowsza
+      <div className=" text-background mt-4 px-10 py-12 relative overflow-hidden  max-lg:px-4">
+        <h2 className="text-3xl font-semibold tracking-tight w-max mb-4 max-sm:w-fit ">
+          Działamy na terenie<br></br>Warszawy i Mazowsza
         </h2>
         <p className="text-sm mb-2 max-w-75">
           Realizujemy inwestycje w Warszawie oraz na terenie całego województwa
           mazowieckiego. Znamy lokalne uwarunkowania i pomagamy wybrać najlepsze
           rozwiązania dla Twojej działki.
         </p>
-        <button className="btn2-white mt-6">
+        <button className="btn2-white mt-6 max-sm:hidden">
           Sprawdź obszar działania<span className="pl-3">→</span>
+        </button>
+        <button className="btn2-white mt-6 sm:hidden">
+          Obszar działania<span className="pl-3">→</span>
         </button>
         <div className="top-0 left-0 bg-dark absolute w-full h-full -z-10">
           <Image

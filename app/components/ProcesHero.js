@@ -55,7 +55,7 @@ function ProcesHero() {
             />
           </Fade>
         </div>
-      </div>{" "}
+      </div>
       <Image
         src={HeroBG}
         alt="hero"

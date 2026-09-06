@@ -16,36 +16,42 @@ function BlogItems() {
       : data.filter((item) => item.category === isActiveFilter);
 
   return (
-    <section className="py-10 px-16">
+    <section className="py-10 px-16 max-2xl:px-8 max-sm:px-4">
       <Fade delay={150} triggerOnce>
         {data
           .filter((item) => item.pinned)
           .map((item) => (
             <div
               key={item.id}
-              className="bg-background-alt grid grid-cols-2 gap-8"
+              className="bg-background-alt grid grid-cols-2 gap-8 max-2xl:gap-4 max-lg:grid-cols-1"
             >
               <div>
                 <Image src={item.image} alt={item.title} />
               </div>
-              <Fade delay={250} triggerOnce className="flex ">
-                <div className="py-6 flex flex-col justify-between">
+              <Fade
+                delay={250}
+                triggerOnce
+                className="flex max-lg:row-start-1 max-lg:px-4"
+              >
+                <div className="py-6 flex flex-col justify-between pr-4 max-2xl:pt-4 pb-1 max-lg:pt-6">
                   <div>
-                    <p className="uppercase tracking-wider text-lg  font-bold">
+                    <p className="uppercase tracking-wider text-lg  font-bold max-2xl:text-base max-sm:text-sm">
                       Artykuł polecany
                     </p>
-                    <h2 className="text-5xl tracking-tight font-semibold mt-4 mb-6">
+                    <h2 className="text-5xl tracking-tight font-semibold mt-4 mb-6 max-2xl:mb-4 max-2xl:mt-2 max-2xl:text-4xl max-sm:text-3xl">
                       {item.title}
                     </h2>
                     <p>{item.description}</p>
-                    <div className="flex gap-2  opacity-80 mt-8">
-                      <MdOutlineCalendarMonth className="w-8 h-8" />
-                      <span className="self-end">{item.date}</span>
+                    <div className="flex gap-2  opacity-80 mt-8 max-2xl:mt-4">
+                      <MdOutlineCalendarMonth className="w-8 h-8 max-md:w-6 max-md:h-6" />
+                      <span className="self-end max-md:text-sm">
+                        {item.date}
+                      </span>
                     </div>
                   </div>
                   <Link
                     href={item.link}
-                    className="inline-flex items-center mt-5 text-primary uppercase tracking-wider font-semibold transition-all duration-300 hover:opacity-75 w-max mb-8"
+                    className="inline-flex items-center mt-5 text-primary uppercase tracking-wider font-semibold transition-all duration-300 hover:opacity-75 w-max mb-8 max-2xl:mb-4 max-lg:mb-0"
                   >
                     Czytaj artykuł
                     <span className="pl-3">→</span>
@@ -55,10 +61,10 @@ function BlogItems() {
             </div>
           ))}
       </Fade>
-      <div className="flex flex-col gap-8 mt-10">
+      <div className="flex flex-col gap-8 mt-10 max-md:gap-6 max-sm:gap-4">
         <Fade triggerOnce>
-          <div className="flex gap-6 h-full items-center">
-            <p className="uppercase">Filtruj tematy:</p>
+          <div className="flex gap-6 h-full items-center max-lg:gap-3 max-md:grid max-md:grid-cols-3 max-sm:gap-1 max-sm:text-sm max-[32rem]:grid-cols-2 ">
+            <p className="uppercase max-lg:hidden">Filtruj tematy:</p>
             <button
               className={`${isActiveFilter === "all" ? "btn1" : "btn1-notChoosed"} uppercase cursor-pointer h-full`}
               onClick={() => setIsActiveFilter("all")}
@@ -76,7 +82,7 @@ function BlogItems() {
             ))}
           </div>
         </Fade>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {filteredData.map((item) => (
             <Fade key={item.id} triggerOnce className="flex">
               <div className="flex flex-col justify-between">

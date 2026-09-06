@@ -8,16 +8,16 @@ import { GiIonicColumn } from "react-icons/gi";
 
 function ContactWhy() {
   return (
-    <section className="px-16 pb-12  overflow-hidden">
+    <section className="px-16 pb-12  overflow-hidden max-2xl:px-8 max-sm:px-4">
       <div className="overflow-hidden relative">
         <Fade triggerOnce duration={1500}>
-          <div className="grid grid-cols-[70fr_30fr] gap-8">
-            <div className="px-8 py-10">
-              <h2 className="text-5xl font-semibold tracking-tight w-max mb-8">
+          <div className="grid grid-cols-[70fr_30fr] gap-8 max-xl:gap-6 max-xl:grid-cols-1">
+            <div className="px-8 py-10 max-2xl:px-4">
+              <h2 className="text-5xl font-semibold tracking-tight w-max mb-8 max-md:w-fit max-sm:text-3xl">
                 Dlaczego warto z nami rozmawiać?
               </h2>
-              <div className="flex gap-16 justify-center">
-                <div className="flex flex-col gap-5 items-center text-center">
+              <div className="flex gap-16 justify-center max-2xl:gap-8 max-md:grid max-md:grid-cols-2  max-[25rem]:grid-cols-1">
+                <div className="flex flex-col gap-5 items-center text-center max-sm:gap-2  max-[25rem]:flex-row  max-[25rem]:text-left max-[25rem]:gap-4">
                   <div className="py-2">
                     <GoClock className="w-14 h-14" />
                   </div>
@@ -30,7 +30,7 @@ function ContactWhy() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col gap-5 items-center text-center">
+                <div className="flex flex-col gap-5 items-center text-center max-sm:gap-2  max-[25rem]:flex-row  max-[25rem]:text-left max-[25rem]:gap-4">
                   <div className="py-2">
                     <SlNotebook className="w-14 h-14" />
                   </div>
@@ -44,7 +44,7 @@ function ContactWhy() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col gap-5 items-center text-center">
+                <div className="flex flex-col gap-5 items-center text-center max-sm:gap-2  max-[25rem]:flex-row  max-[25rem]:text-left max-[25rem]:gap-4">
                   <div className="py-2">
                     <GiIonicColumn className="w-14 h-14" />
                   </div>
@@ -57,7 +57,7 @@ function ContactWhy() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col gap-5 items-center text-center">
+                <div className="flex flex-col gap-5 items-center text-center max-sm:gap-2  max-[25rem]:flex-row  max-[25rem]:text-left max-[25rem]:gap-4">
                   <div className="py-2">
                     <GoPeople className="w-14 h-14" />
                   </div>
@@ -72,7 +72,7 @@ function ContactWhy() {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative max-xl:min-h-80">
               <Image
                 src={IMGcon}
                 alt="alt"

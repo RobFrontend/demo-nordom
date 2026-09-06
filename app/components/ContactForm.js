@@ -5,10 +5,10 @@ import { CiLock } from "react-icons/ci";
 
 function ContactForm() {
   return (
-    <form className="flex flex-col gap-6 relative px-10 py-12 overflow-hidden h-full">
+    <form className="flex flex-col gap-6 relative px-10 py-12 overflow-hidden h-full max-lg:px-4">
       <div className="flex flex-col gap-6 justify-between">
         <div>
-          <h2 className="text-4xl font-semibold tracking-tight w-max mb-4">
+          <h2 className="text-4xl font-semibold tracking-tight w-max mb-4 max-sm:w-fit max-sm:text-3xl">
             Wypełnij formularz wyceny
           </h2>
           <p className="text-sm mb-2">
@@ -16,7 +16,7 @@ function ContactForm() {
             Twoich oczekiwań.
           </p>
         </div>
-        <div className="flex gap-4 ">
+        <div className="flex gap-4 max-sm:flex-col">
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="name" className="text-sm font-semibold uppercase">
               Rodzaj usługi
@@ -52,7 +52,7 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-sm:flex-col">
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="name" className="text-sm font-semibold uppercase">
               Lokalizacja inwestycji
@@ -79,7 +79,7 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-sm:flex-col">
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="name" className="text-sm font-semibold uppercase">
               Termin rozpoczęcia
@@ -113,7 +113,7 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-sm:flex-col">
           <div className="flex flex-col gap-2 w-full">
             <label htmlFor="name" className="text-sm font-semibold uppercase">
               Telefon
@@ -159,12 +159,15 @@ function ContactForm() {
             </Link>
           </label>
         </div>
-        <button className="btn1 mt-2">
+        <button className="btn1 mt-2 max-sm:hidden">
           Wyślij zapytanie o wycenę<span className="pl-6">→</span>
+        </button>
+        <button className="btn1 mt-2 sm:hidden">
+          Wyślij zapytanie<span className="pl-3">→</span>
         </button>
       </div>
       <div className="flex gap-2 items-end mx-auto h-full">
-        <CiLock className="w-5 h-5 opacity-80" />
+        <CiLock className="w-5 h-5 opacity-80 max-sm:self-start" />
         <p className="text-xs opacity-80">
           Twoje dane są u nas bezpieczne. Nie udostępniamy osobom trzecim.
         </p>
