@@ -35,7 +35,7 @@ function ProcesHero() {
               </p>
               <Fade delay={250} triggerOnce>
                 <Link
-                  href="/"
+                  href="/kontakt"
                   className="btn1 hero-btn1 inline-flex items-center tracking-wider hover:-translate-y-1 text-lg mt-10 max-[1720px]:text-base max-sm:w-full max-sm:flex max-sm:justify-between"
                 >
                   Umów rozmowę<span className="pl-6">→</span>

@@ -31,13 +31,13 @@ function HomeHero() {
             <div className="flex justify-between gap-4 pt-10 max-2xl:justify-start max-sm:flex-col">
               <Fade delay={250} triggerOnce>
                 <Link
-                  href="/"
+                  href="/kontakt"
                   className="btn1 hero-btn1 inline-flex items-center tracking-wider hover:-translate-y-1 text-lg max-[1720px]:text-base  max-2xl:hidden"
                 >
                   Wyceń budowę<span className="pl-6 max-xl:pl-3">→</span>
                 </Link>
                 <Link
-                  href="/"
+                  href="/kontakt"
                   className="btn1 inline-flex items-center tracking-wider hover:-translate-y-1 text-lg max-[1720px]:text-base max-sm:w-full max-sm:flex max-sm:justify-between 2xl:hidden"
                 >
                   Wyceń budowę<span className="pl-6 max-xl:pl-3">→</span>
@@ -45,13 +45,13 @@ function HomeHero() {
               </Fade>
               <Fade delay={500} triggerOnce>
                 <Link
-                  href="/"
+                  href="/realizacje"
                   className="btn2 hero-btn2  inline-flex items-center tracking-wider hover:-translate-y-1 text-lg max-[1720px]:text-base max-2xl:hidden"
                 >
                   Zobacz realizacje<span className="pl-6">→</span>
                 </Link>
                 <Link
-                  href="/"
+                  href="/realizacje"
                   className="btn2-white xl:hero-btn2  inline-flex items-center tracking-wider hover:-translate-y-1 text-lg max-[1720px]:text-base 2xl:hidden max-sm:w-full max-sm:flex max-sm:justify-between"
                 >
                   Zobacz realizacje<span className="pl-6 max-xl:pl-3">→</span>
