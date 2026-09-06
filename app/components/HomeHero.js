@@ -32,7 +32,13 @@ function HomeHero() {
               <Fade delay={250} triggerOnce>
                 <Link
                   href="/"
-                  className="btn1 xl:hero-btn1 inline-flex items-center tracking-wider hover:-translate-y-1 text-lg max-[1720px]:text-base max-sm:w-full max-sm:flex max-sm:justify-between"
+                  className="btn1 hero-btn1 inline-flex items-center tracking-wider hover:-translate-y-1 text-lg max-[1720px]:text-base  max-2xl:hidden"
+                >
+                  Wyceń budowę<span className="pl-6 max-xl:pl-3">→</span>
+                </Link>
+                <Link
+                  href="/"
+                  className="btn1 inline-flex items-center tracking-wider hover:-translate-y-1 text-lg max-[1720px]:text-base max-sm:w-full max-sm:flex max-sm:justify-between 2xl:hidden"
                 >
                   Wyceń budowę<span className="pl-6 max-xl:pl-3">→</span>
                 </Link>

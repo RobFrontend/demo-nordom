@@ -28,7 +28,7 @@ function OfferOffer() {
                 </p>
               </div>
               <Link
-                href="/oferta"
+                href="/oferta/rodzaj-oferty"
                 className="inline-flex items-center mt-5 mx-4 text-primary uppercase tracking-wider text-sm font-semibold transition-all duration-300 "
               >
                 Dowiedz się więcej<span className="pl-3">→</span>
@@ -49,7 +49,7 @@ function OfferOffer() {
                 </p>
               </div>
               <Link
-                href="/oferta"
+                href="/oferta/rodzaj-oferty"
                 className="inline-flex items-center mt-5 mx-4 text-primary uppercase tracking-wider text-sm font-semibold transition-all duration-300 hover:opacity-75"
               >
                 Dowiedz się więcej<span className="pl-3">→</span>
@@ -70,7 +70,7 @@ function OfferOffer() {
                 </p>
               </div>
               <Link
-                href="/oferta"
+                href="/oferta/rodzaj-oferty"
                 className="inline-flex items-center mt-5 mx-4 text-primary uppercase tracking-wider text-sm font-semibold transition-all duration-300 hover:opacity-75"
               >
                 Dowiedz się więcej<span className="pl-3">→</span>
@@ -91,7 +91,7 @@ function OfferOffer() {
                 </p>
               </div>
               <Link
-                href="/oferta"
+                href="/oferta/rodzaj-oferty"
                 className="inline-flex items-center mt-5 mx-4 text-primary uppercase tracking-wider text-sm font-semibold transition-all duration-300 hover:opacity-75"
               >
                 Dowiedz się więcej<span className="pl-3">→</span>

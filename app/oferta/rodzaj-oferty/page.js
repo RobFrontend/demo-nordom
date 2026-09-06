@@ -9,13 +9,13 @@ function page() {
             Strona główna
           </Link>
           <p className="opacity-50 max-2xl:opacity-80">/</p>
-          <Link href="/realizacje" className="opacity-50 max-2xl:opacity-80">
-            Realizacje
+          <Link href="/oferta" className="opacity-50 max-2xl:opacity-80">
+            Oferta
           </Link>
           <p className="opacity-50 max-2xl:opacity-80">/</p>
-          <p className="text-primary">Wybrana realizacja</p>
+          <p className="text-primary">Wybrana oferta</p>
         </div>
-        <p>Indywidualna strona wybranej realizacji</p>
+        <p>Indywidualna strona wybranej oferty</p>
       </div>
     </div>
   );

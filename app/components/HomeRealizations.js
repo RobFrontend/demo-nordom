@@ -37,7 +37,7 @@ function HomeRealizations() {
           <div className="flex gap-6 max-xl:grid max-xl:grid-cols-2 max-sm:grid-cols-1">
             <div className="flex flex-col justify-between bg-background pb-4 ">
               <Link
-                href="/realizacje"
+                href="/realizacje/demo"
                 className="transition-opacity duration-300 hover:opacity-80"
               >
                 <div>
@@ -57,7 +57,7 @@ function HomeRealizations() {
             </div>
             <div className="flex flex-col justify-between bg-background pb-4">
               <Link
-                href="/realizacje"
+                href="/realizacje/demo"
                 className="transition-opacity duration-300 hover:opacity-80"
               >
                 <div>
@@ -77,7 +77,7 @@ function HomeRealizations() {
             </div>
             <div className="flex flex-col justify-between bg-background pb-4">
               <Link
-                href="/realizacje"
+                href="/realizacje/demo"
                 className="transition-opacity duration-300 hover:opacity-80"
               >
                 <div>
@@ -97,7 +97,7 @@ function HomeRealizations() {
             </div>
             <div className="flex flex-col justify-between bg-background pb-4">
               <Link
-                href="/realizacje"
+                href="/realizacje/demo"
                 className="transition-opacity duration-300 hover:opacity-80"
               >
                 <div>
