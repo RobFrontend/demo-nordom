@@ -45,6 +45,9 @@ function Footer() {
             <Link href="/">Strona Główna</Link>
           </li>
           <li className="opacity-80 transition-opacity duration-300 hover:opacity-60">
+            <Link href="/oferta">Oferta</Link>
+          </li>
+          <li className="opacity-80 transition-opacity duration-300 hover:opacity-60">
             <Link href="/o-nas">O nas</Link>
           </li>
           <li className="opacity-80 transition-opacity duration-300 hover:opacity-60">
